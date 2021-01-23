@@ -21,6 +21,8 @@ public class CustomerController {
     @Autowired
     CustomerRepository customerRepository;
 
+    Main main;
+
     @PostMapping("/add")
     public ResponseEntity addCustomer(Customer customer){
 
@@ -46,12 +48,35 @@ public class CustomerController {
         int sum1 = 100 + 50;
         int sum2 = sum1 + 250;
         int sum3 = sum2 + sum2;
-//        char a = 65, b = 30, c = 40; Ask Question with Hassan
+        String txt = "ABC hello \"xyz\" kkk";
+//        int a = 10;
+//        int b = 5;
+//        boolean c = a < b;
+              char a = 65, b = 30, c = 40;// Ask Question with Hassan
 
 //        System.out.println("Letter " + myLetter);
+//        if (a > b)
+//        {
+//            return ("True");
+//        }
+//        String result = (a < b) ? "Good Day." : "Good Evening";
+//       int i = 0;
+//       while (i < 5) {
+//
+//           System.out.println(i);
+//           i++;
+//           //return ("Hello there! \n" + i);
+//
+//       }
 
-        return ("Hello there! " + sum1);
+//        public static void Main ( String[] args){
+          Main.myMethod();
+            return ("Hello there! \n" + a );
+
+//        }
     }
+
+
 
     @GetMapping("/all")
     public List<Customer> getAllCustomer(){
